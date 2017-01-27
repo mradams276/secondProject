@@ -6,11 +6,11 @@
 //  Copyright © 2017 Adams, Kyle. All rights reserved.
 //
 
-#include "ProjectController.hpp"
+#include "secondController.hpp"
 
 int main()
 {
-    ProjectController * app = new ProjectController();
+    secondController * app = new secondController();
     app->start();
     return 0;
 }
