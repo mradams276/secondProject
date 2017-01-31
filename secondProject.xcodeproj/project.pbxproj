@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EBAC9B91E3B9A0600ACFACD /* secondController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAC9B71E3B9A0600ACFACD /* secondController.cpp */; };
-		1EBAC9BB1E3B9A1500ACFACD /* secondRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAC9BA1E3B9A1500ACFACD /* secondRunner.cpp */; };
 		1EE7B9361E40ECD300DD9EF1 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7B9341E40ECD300DD9EF1 /* Timer.cpp */; };
+		1EE7B9401E40F47600DD9EF1 /* secondController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7B93D1E40F47600DD9EF1 /* secondController.cpp */; };
+		1EE7B9411E40F47600DD9EF1 /* secondRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7B93F1E40F47600DD9EF1 /* secondRunner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +26,11 @@
 
 /* Begin PBXFileReference section */
 		1EBAC9AD1E3B993400ACFACD /* secondProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = secondProject; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EBAC9B71E3B9A0600ACFACD /* secondController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = secondController.cpp; sourceTree = "<group>"; };
-		1EBAC9B81E3B9A0600ACFACD /* secondController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = secondController.hpp; sourceTree = "<group>"; };
-		1EBAC9BA1E3B9A1500ACFACD /* secondRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = secondRunner.cpp; sourceTree = "<group>"; };
 		1EE7B9341E40ECD300DD9EF1 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
 		1EE7B9351E40ECD300DD9EF1 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
+		1EE7B93D1E40F47600DD9EF1 /* secondController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = secondController.cpp; path = Controller/secondController.cpp; sourceTree = "<group>"; };
+		1EE7B93E1E40F47600DD9EF1 /* secondController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = secondController.hpp; path = Controller/secondController.hpp; sourceTree = "<group>"; };
+		1EE7B93F1E40F47600DD9EF1 /* secondRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = secondRunner.cpp; path = Controller/secondRunner.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +72,9 @@
 		1EBAC9BC1E3B9A2D00ACFACD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1EBAC9B71E3B9A0600ACFACD /* secondController.cpp */,
-				1EBAC9BA1E3B9A1500ACFACD /* secondRunner.cpp */,
-				1EBAC9B81E3B9A0600ACFACD /* secondController.hpp */,
+				1EE7B93F1E40F47600DD9EF1 /* secondRunner.cpp */,
+				1EE7B93D1E40F47600DD9EF1 /* secondController.cpp */,
+				1EE7B93E1E40F47600DD9EF1 /* secondController.hpp */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -146,8 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EE7B9361E40ECD300DD9EF1 /* Timer.cpp in Sources */,
-				1EBAC9B91E3B9A0600ACFACD /* secondController.cpp in Sources */,
-				1EBAC9BB1E3B9A1500ACFACD /* secondRunner.cpp in Sources */,
+				1EE7B9411E40F47600DD9EF1 /* secondRunner.cpp in Sources */,
+				1EE7B9401E40F47600DD9EF1 /* secondController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

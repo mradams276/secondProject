@@ -7,6 +7,7 @@
 //
 
 #include "secondController.hpp"
+#include "../Model/Timer.hpp"
 #include <iostream>
 
 using namespace std;
@@ -25,6 +26,9 @@ void secondController :: changeWithPointer(int * numberPointedTo)
 
 void secondController :: start()
 {
+    Timer sillyTime = Timer();
+    sillyTime.startTimer();
+    
     cout << "Coding is sooo much fun" << endl;
     cout << "Set the int here" << endl;
     int myNumber;
@@ -36,6 +40,12 @@ void secondController :: start()
     cout << ". And now its changed to " << myNumber << "." << endl;
     cout << "changed again?? " << myNumber << endl;
     changeWithPointer(numberPointer);
+    
+    sillyTime.stopTimer();
+    sillyTime.displayTimerInformation();
+    
+    sillyTime.resetTimer();
+    cout << sillyTime.getExecutionTimeInMicroseconds() << endl;
     
 }
 
